@@ -70,10 +70,12 @@ a:visited {
 @keyframes Forward {
     from {
         transform: translateX(0px);
+        border-right: 1em solid rgb(255, 255, 255);
     }
 
     to {
         transform: translateX(20px);
+        border-right: 1em solid gray;
     }
 }
 
@@ -81,10 +83,12 @@ a:visited {
 @keyframes Backword {
     from {
         transform: translateX(20px);
+        border-right: 1em solid gray;
     }
 
     to {
         transform: translateX(0px);
+        border-right: 1em solid rgb(255, 255, 255);
     }
 }
 
