@@ -7,14 +7,15 @@
 </head>
 
 <body>
-    <ul class="navbar">
+    <audio autoplay loop id="Theme" src="Sounds/Loop RPC Menu.mp3" preload="auto"></audio>
+    <audio id="ButtonSFX" src="Sounds/MainMenuButtonSFX.mp3" preload="auto"></audio>
+    <ul id="playButton" class="navbar">
         <li><a href="http://rpcauthority.wikidot.com/">The RPC Authority</a>
         <li><a href="https://t.me/RPCUnityofficial">Telegram</a>
         <li><a href="https://discord.gg/gQ6JQP4V8H">Discord Server</a>
         <li><a href="https://rpc-re0blivion.fandom.com/wiki/RPC_Re(0)blivion_Wiki">RPC:Re[O]blivion Wiki</a>
         <li><a href="https://www.youtube.com/channel/UC-_3Ahfp2NLQzyJSps-tC6w">Youtube chanel</a>
     </ul>
-
     <h1>RPC:Re[O]blivion</h1>
 
     <p>Welcome to RPC:Re[O]blivion page!
@@ -22,16 +23,20 @@
     <p>RPC:Re[O]blivion, is a free-to-play multiplayer horror game, inspired by the RPC universe.
 
     <h1>All Class in game:</h1>
-    <p><a href="http://rpcauthority.wikidot.com/list-of-all-msts">MST November-7 "Hammer The Gamma"</a>
-    <p><a href="http://rpcauthority.wikidot.com/containment-hub">L1-CSD Personnel</a>
-    <p><a href="http://rpcauthority.wikidot.com/research-hub">Research Personnel</a>
-    <p><a href="http://rpcauthority.wikidot.com/authority-security-force">Authority Security Force</a>
-    <p><a href="http://rpcauthority.wikidot.com/rcpa-hub">RCPA Agent</a>
-    <p><a href="http://rpcauthority.wikidot.com/rpc-042">RPC-042 - "The Screeching Cries"</a>
-    <p><a href="http://rpcauthority.wikidot.com/rpc-020">RPC-020 - "It Came From Outer Space"</a>
-    <p><a href="http://rpcauthority.wikidot.com/rpc-693">RPC-693 - "Parasite Skeleton"</a>
-    <p><a href="http://rpcauthority.wikidot.com/rpc-693">RPC-693-1 - "Parasite Skeleton"</a>
-    <div></div>
+    <div id="playButton1" class="grid-container">
+    <a href="http://rpcauthority.wikidot.com/list-of-all-msts"><button class="my-button">MST November-7 "Hammer The Gamma"</button></a>
+    <a href="http://rpcauthority.wikidot.com/containment-hub"><button class="my-button">L1-CSD Personnel</button></a>
+    <a href="http://rpcauthority.wikidot.com/research-hub"><button class="my-button">Research Personnel</button></a>
+    <a href="http://rpcauthority.wikidot.com/authority-security-force"><button class="my-button">Authority Security Force</button></a>
+    <a href="http://rpcauthority.wikidot.com/rcpa-hub"><button class="my-button">RCPA Agent</button></a>
+    <a href="http://rpcauthority.wikidot.com/the-first-gunslinger"><button class="my-button">RCPA The Eastwood-class Protector</button></a>
+    <a href="http://rpcauthority.wikidot.com/rpc-042"><button class="my-button">RPC-042 - "The Screeching Cries"</button></a>
+    <a href="http://rpcauthority.wikidot.com/rpc-020"><button class="my-button">RPC-020 - "It Came From Outer Space"</button></a>
+    <a href="http://rpcauthority.wikidot.com/rpc-693"><button class="my-button">RPC-693 - "Parasite Skeleton"</button></a>
+    <a href="http://rpcauthority.wikidot.com/rpc-135"><button class="my-button">RPC-135 - "TV Head"</button></a>
+    <a href="http://rpcauthority.wikidot.com/rpc-827"><button class="my-button">RPC-827 - "Phobos"</button></a>
+    <a href="http://rpcauthority.wikidot.com/rpc-002"><button class="my-button">RPC-002 - "Quantum Revolver"</button></a>
+    </div>
     <!-- <h1>Offical cinematic teaser:</h1> -->
     <!-- <video playsinline autoplay muted width="920" loop poster="Img/N.bmp">
         <source src="Video/Tailer.mp4" type="video/mp4" />
@@ -41,6 +46,7 @@
             href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">https://creativecommons.org/licenses/by-sa/3.0/legalcode</a>.
     <p>This software includes third party libraries and solutions that are not licensed under Creative Commons
         Attribution-ShareAlike 3.0 International License.
+        <script src="script.js"></script>
 </body>
 
 </html>

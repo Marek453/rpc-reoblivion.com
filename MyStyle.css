@@ -8,8 +8,6 @@ body {
     background-attachment: fixed;
 }
 
-
-
 ul.navbar {
     list-style-type: armenian;
     padding: 0;
@@ -20,12 +18,46 @@ ul.navbar {
     width: 9em
 }
 
+.my-button {
+    background: linear-gradient(to bottom, #000000, #242424);
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: 0.2em solid rgb(255, 255, 255);
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Text size */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underline for anchor buttons */
+    display: inline-block; /* Allow padding and margin */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 колонки */
+    gap: 10px; /* отступы между элементами */
+}
+
+.grid-item {
+    background: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+  .my-button:hover {
+    border:0.2em solid rgb(251, 255, 0); /* Slightly darker green on hover */
+  }
+
+  .my-button:active {
+    border:0.2em solid rgb(192, 196, 0);
+    transform: translateY(1px); /* Slight downward shift */
+  }
+
 ul.navbar li {
-    background: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, #000000, #242424);
     margin: 0.5em 0;
     padding: 0.3em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-right: 1em solid rgb(255, 255, 255);
+    border:  0.2em solid rgb(255, 255, 255);
 }
 
 /* div {
@@ -70,12 +102,12 @@ a:visited {
 @keyframes Forward {
     from {
         transform: translateX(0px);
-        border-right: 1em solid rgb(255, 255, 255);
+        border:  0.2em solid rgb(255, 255, 255);
     }
 
     to {
         transform: translateX(20px);
-        border-right: 1em solid gray;
+        border:  0.2em solid rgb(251, 255, 0);
     }
 }
 
@@ -83,12 +115,12 @@ a:visited {
 @keyframes Backword {
     from {
         transform: translateX(20px);
-        border-right: 1em solid gray;
+        border:  0.2em solid rgb(251, 255, 0);
     }
 
     to {
         transform: translateX(0px);
-        border-right: 1em solid rgb(255, 255, 255);
+        border:  0.2em solid rgb(255, 255, 255);
     }
 }
 
