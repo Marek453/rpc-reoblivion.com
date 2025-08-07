@@ -1,52 +1,126 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/VideoGame">
 <head>
-    <title>Main</title>
-    <link rel="stylesheet" href="MyStyle.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="RPC: Re[O]blivion - A multi-player exploration game with survival horror elements built in Unity">
+    <meta name="google-site-verification" content="ko0Gn_cZPlSt_6fkEgjXfCC6bY0jkLPQ9E75NEkqVfc">
+    <head>
+        <title >RPC: Re[O]blivion</title>
+        <link rel="icon" type="images/logo.png" href="images/logo.png">
+      </head>
+    
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/iconochive.css">
+    <link rel="stylesheet" href="css/css.css">
+    
+    <!-- Preload scripts -->
+    <link rel="preload" href="js/jquery.slim.min.js" as="script">
+    <link rel="preload" href="js/popper.min.js" as="script">
+    <link rel="preload" href="js/bootstrap.min.js" as="script">
 </head>
 
 <body>
-    <audio autoplay loop id="Theme" src="Sounds/Loop RPC Menu.mp3" preload="auto"></audio>
-    <audio id="ButtonSFX" src="Sounds/MainMenuButtonSFX.mp3" preload="auto"></audio>
-    <ul id="playButton" class="navbar">
-        <li><a href="http://rpcauthority.wikidot.com/">The RPC Authority</a>
-        <li><a href="https://t.me/RPCUnityofficial">Telegram</a>
-        <li><a href="https://discord.gg/gQ6JQP4V8H">Discord Server</a>
-        <li><a href="https://rpc-re0blivion.fandom.com/wiki/RPC_Re(0)blivion_Wiki">RPC:Re[O]blivion Wiki</a>
-        <li><a href="https://www.youtube.com/channel/UC-_3Ahfp2NLQzyJSps-tC6w">Youtube chanel</a>
-    </ul>
-    <h1>RPC:Re[O]blivion</h1>
+    <!-- Skip to content link for accessibility -->
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md fixed-top" style="background-color: #080c11;">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img class="nav-image" alt="RPC: Unity" src="images/logo.png" width="40" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://rpcauthority.wikidot.com/">The RPC Authority</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://t.me/RPCUnityofficial">Telegram</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://discord.gg/gQ6JQP4V8H">Discord</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="https://www.youtube.com/channel/UC-_3Ahfp2NLQzyJSps-tC6w">Youtube chanel</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link" href="https://rpc-re0blivion.fandom.com/wiki/RPC_Re(0)blivion_Wiki">RPC:Re[O]blivion Wiki</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link btn-download" href="https://drive.google.com/file/d/1FbWWNTW6_bgA1Zp0nSoSiYuC3ED22dtq/view?usp=sharing" title="Download RPC: Re[O]blivion [26.06.2025]">
+                                <span class="oi oi-data-transfer-download" aria-hidden="true"></span> Download
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <p>Welcome to RPC:Re[O]blivion page!
+    <main id="main-content" class="hero-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="card card-hero">
+                        <div class="card-header">
+                            <h1 itemprop="name">RPC: Re[O]blivion</h1>
+                        </div>
+                        <div class="card-body" itemprop="description">
+                            <p class="lead">A multi-player exploration game with survival horror elements built in Unity.</p>
+                            <p>Experience the RPC universe as you explore and try to escape the containment breach of Site-070.</p>
+                            
+                            <div class="button-group">
+                                <a href="https://drive.google.com/file/d/1FbWWNTW6_bgA1Zp0nSoSiYuC3ED22dtq/view?usp=sharing" class="btn btn-primary btn-play">Play Now</a>
+                                <a href="https://www.donationalerts.com/r/marek_453" class="btn btn-outline-secondary" target="_blank" rel="noopener noreferrer">Support</a>
+                            </div>
+                            
+                            <hr>
+                            
+                            <section class="news-section" aria-labelledby="news-heading">
+                                <h2 id="news-heading">Latest News</h2>
+                                <article class="news-article">
+                                    <h3>Version 0.1 is comming! <time datetime="2025-08-07">August 7, 2025</time></h3>
+                                    <p>Great news! We will soon finish work on version 0.1, follow the information on <a href="https://discord.gg/gQ6JQP4V8H">Discord</a> or <a href="https://t.me/RPCUnityofficial">Telegram!</a></p>
+                                </article>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <p>RPC:Re[O]blivion, is a free-to-play multiplayer horror game, inspired by the RPC universe.
+    
 
-    <h1>All Class in game:</h1>
-    <div id="playButton1" class="grid-container">
-    <a href="http://rpcauthority.wikidot.com/list-of-all-msts"><button class="my-button">MST November-7 "Hammer The Gamma"</button></a>
-    <a href="http://rpcauthority.wikidot.com/containment-hub"><button class="my-button">L1-CSD Personnel</button></a>
-    <a href="http://rpcauthority.wikidot.com/research-hub"><button class="my-button">Research Personnel</button></a>
-    <a href="http://rpcauthority.wikidot.com/authority-security-force"><button class="my-button">Authority Security Force</button></a>
-    <a href="http://rpcauthority.wikidot.com/rcpa-hub"><button class="my-button">RCPA Agent</button></a>
-    <a href="http://rpcauthority.wikidot.com/the-first-gunslinger"><button class="my-button">RCPA The Eastwood-class Protector</button></a>
-    <a href="http://rpcauthority.wikidot.com/rpc-042"><button class="my-button">RPC-042 - "The Screeching Cries"</button></a>
-    <a href="http://rpcauthority.wikidot.com/rpc-020"><button class="my-button">RPC-020 - "It Came From Outer Space"</button></a>
-    <a href="http://rpcauthority.wikidot.com/rpc-693"><button class="my-button">RPC-693 - "Parasite Skeleton"</button></a>
-    <a href="http://rpcauthority.wikidot.com/rpc-135"><button class="my-button">RPC-135 - "TV Head"</button></a>
-    <a href="http://rpcauthority.wikidot.com/rpc-827"><button class="my-button">RPC-827 - "Phobos"</button></a>
-    <a href="http://rpcauthority.wikidot.com/rpc-002"><button class="my-button">RPC-002 - "Quantum Revolver"</button></a>
-    </div>
-    <!-- <h1>Offical cinematic teaser:</h1> -->
-    <!-- <video playsinline autoplay muted width="920" loop poster="Img/N.bmp">
-        <source src="Video/Tailer.mp4" type="video/mp4" />
-    </video> -->
-    <p>This game is licensed under a Creative Commons Attribution-ShareAlike 3.0 International License. To view a copy
-        of this license, visit <a
-            href="https://creativecommons.org/licenses/by-sa/3.0/legalcode">https://creativecommons.org/licenses/by-sa/3.0/legalcode</a>.
-    <p>This software includes third party libraries and solutions that are not licensed under Creative Commons
-        Attribution-ShareAlike 3.0 International License.
-        <script src="script.js"></script>
+    <!-- JavaScript -->
+    <script src="js/jquery.slim.min.js" defer></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+    
+    <!-- Analytics -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            // Analytics code here
+        });
+    </script>
 </body>
-
 </html>
